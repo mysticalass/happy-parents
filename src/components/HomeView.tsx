@@ -1,6 +1,7 @@
 import React from 'react';
 import { Studio, ClassSession } from '../types';
 import { Star, MoreHorizontal, ArrowRight, Heart, Sparkles, Users, Award } from 'lucide-react';
+import { DisqusForum } from './DisqusForum';
 
 interface HomeViewProps {
   recommendedStudios: Studio[];
@@ -241,6 +242,9 @@ export const HomeView: React.FC<HomeViewProps> = ({
           </button>
         </div>
       </section>
+
+      {/* DISQUS DISCUSSION FORUM */}
+      <DisqusForum />
     </div>
   );
 };
